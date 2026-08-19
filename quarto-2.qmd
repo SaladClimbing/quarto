@@ -11,7 +11,9 @@ execute:
 #| message: false
 #| label: setup 
 library(tidyverse)
+```
 
+```{r}
 ggplot(iris, aes(x = Sepal.Width, y = Sepal.Length, color = Species)) +
   geom_point() +
   labs(
