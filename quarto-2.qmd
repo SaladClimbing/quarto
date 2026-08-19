@@ -1,0 +1,23 @@
+---
+title: "My Second Quarto Document"
+author: "Andrew Lucas"
+format: html
+
+execute:
+  echo: false
+---
+
+```{r}
+#| message: false
+#| label: setup 
+library(tidyverse)
+
+ggplot(iris, aes(x = Sepal.Width, y = Sepal.Length, color = Species)) +
+  geom_point() +
+  labs(
+    x = "Sepal width",
+    y = "Sepal length",
+    title = "Measurements for Different Species of Iris",
+    subtitle = "Virginica has the longest sepals"
+  )
+```
